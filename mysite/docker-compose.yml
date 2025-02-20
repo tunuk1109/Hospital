@@ -15,6 +15,10 @@ services:
     depends_on:
       - db
 
+  redis:
+    image: redis:latest
+    restart: always
+
   db:
     image: postgres:latest
     restart: always
